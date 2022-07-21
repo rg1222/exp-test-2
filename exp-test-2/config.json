@@ -1,0 +1,12 @@
+{
+    "name": "Test 2",
+    "exp_id": "exp-test-2",
+    "description": "A short jspsych reaction time task",
+    "instructions": "Press F or Q key depending on circle color",
+    "url": "https://github.com/rg1222/exp-test-2",
+    "template":"jspsych",
+    "contributors": [
+                     "Craig Gallagher"
+                    ], 
+    "time":5
+}
