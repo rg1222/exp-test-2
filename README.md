@@ -1,5 +1,5 @@
 # exp-test-2
-A simple jpsych task designed according to experiment factory guidelines.
+A simple jspsych task designed according to experiment factory guidelines.
 
 TO RUN LOCALLY:<br>
 (from inside the directory containing the Dockerfile and startscript.sh)<br>
