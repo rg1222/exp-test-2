@@ -9,6 +9,6 @@ docker run -d -p 80:80 -v ${PWD}/exp-test-2/data:/scif/data expfactory/experimen
 Then, on any web browser, go to the address "localhost" (or enter 127.0.0.1) to begin the experiment. Results will be saved as a JSON file in the exp-test-2/data directory.
 
 To bash into docker container:<br>
-docker ps #to determine container ID (e.g., 8a8bed8c7f82)
+docker ps #to determine container ID (e.g., 8a8bed8c7f82)<br>
 docker exec -it 8a8bed8c7f82 bash
 
