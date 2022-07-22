@@ -1,0 +1,38 @@
+/* OLD STUFF // Local Download
+    function download(data, filename, type) {
+        var file = new Blob([data], {type: type});
+        if (window.navigator.msSaveOrOpenBlob) // IE10+
+            window.navigator.msSaveOrOpenBlob(file, filename);
+        else { // Others
+            var a = document.createElement("a"),
+                    url = URL.createObjectURL(file);
+            a.href = url;
+            a.download = filename;
+            a.hidden = true;
+            document.body.appendChild(a);
+            a.click();
+            setTimeout(function() {
+                document.body.removeChild(a);
+                window.URL.revokeObjectURL(url);  
+            }, 0); 
+        }
+    };
+    function upload_to_server(data, type) {
+        var file = new Blob([data], {type: type});
+        var output = new FormData();
+        output.append("upfile", file);
+        
+        fetch("3b-blob-upload.php", {
+            method: "POST",
+            body: output
+        })
+        .then((res) => { return res.text(); })
+        .then((txt) => { console.log(txt); });
+    
+    }
+    function saveData(name, data){
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', 'write_data.php'); // 'write_data.php' is the path to the php file described above.
+        xhr.setRequestHeader('Content-Type', 'application/json');
+        xhr.send(JSON.stringify({filedata: data}));
+    }*/
